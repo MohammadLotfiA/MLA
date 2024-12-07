@@ -14,7 +14,7 @@ Whether you’re a beginner interested in hacking basics or a seasoned professio
 - **Performance Optimization**: Designed for efficiency and speed, enabling effective and responsive workflows.
 - **Wide Range of Topics**: Covering hacking basics, web app security, Active Directory (AD) pentesting, CTF challenges, and more.
 - **Educational Labs and Tutorials**: Realistic labs and detailed tutorials on using the tools and learning various techniques.
-  
+
 The project is not just a toolkit but a **showcase of my capabilities and dedication** to keeping cybersecurity resources accessible and current. I’m constantly updating this suite to serve as both a resume for future references and a valuable resource for the community.
 
 ---
@@ -22,18 +22,22 @@ The project is not just a toolkit but a **showcase of my capabilities and dedica
 ## 📚 What You’ll Find Here
 
 ### Tools
+
 - **Custom-built tools** compatible with modern environments and optimized for various cybersecurity tasks.
 - **Scripts** for vulnerability assessments, penetration testing, and reconnaissance, focusing on compatibility with the latest Python versions and tool dependencies.
 
 ### Labs
+
 - **Hands-on labs** for practical experience with simulated real-world scenarios.
 - **Active Directory** pentesting labs, web application security setups, and network analysis exercises.
-  
+
 ### Tutorials
+
 - **Step-by-step guides** for beginners and advanced users on how to set up, configure, and run tools.
 - **Walkthroughs for CTF challenges**, covering common and advanced exploitation techniques.
 
 ### Techniques
+
 - **Advanced pentesting techniques** for experienced users looking to deepen their knowledge.
 - **Real-life applications** for improved understanding of cybersecurity’s practical side.
 
@@ -44,13 +48,15 @@ The project is not just a toolkit but a **showcase of my capabilities and dedica
 Each tool and resource within **MLA** is designed to be as user-friendly as possible. However, prerequisites for certain tools may vary. Below is a quick guide to get you up and running:
 
 1. **Clone the Repository**:
+
    ```bash
-   https://github.com/MoLoSec/MLA.git
+   https://github.com/MohammadLotfiA/MLA.git
    cd MLA
    ```
 
 2. **Install Requirements**:
    Each tool will have its requirements specified in its subdirectory. For Python-based tools, install dependencies with:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -74,6 +80,7 @@ The development and addition of new tools, techniques, and tutorials will follow
 ## 📜 License
 
 **MLA** is licensed under a dual-license model:
+
 - **Non-Commercial License**: Free to use and modify for personal or educational purposes (credits must be given).
 - **Commercial Use**: Requires a separate commercial license. Contact me via [my website](https://mohammadlotfi.com/contact) for details.
 
@@ -96,6 +103,7 @@ Contributions are always welcome! If you have a tool idea, a bug fix, or a tutor
 ## 📬 Contact
 
 For commercial inquiries, questions, or collaboration requests, please reach out via:
+
 - **Website**: https://mohammadlotfi.com/
 - **LinkedIn**: https://www.linkedin.com/in/mohammadlotfia/
 
