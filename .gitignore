@@ -1,18 +1,25 @@
 # General
 .DS_Store
 Thumbs.db
+Desktop.ini
 *.log
 *.tmp
 *.lock
 
-# OS-generated files
+# OS-generated files and temporary editor files
 *.swp
 *.swo
 *.~undo-tree~
 *.bak
 *.~backup~
+
+# IDEs and Editors
 .idea/
 .vscode/
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+*.iml
 
 # Node.js
 node_modules/
@@ -26,7 +33,7 @@ yarn-error.log*
 *.pyd
 __pycache__/
 *.env
-*.venv/
+.venv/
 
 # Java
 *.class
@@ -41,14 +48,6 @@ __pycache__/
 
 # Dependency directories
 /vendor/
-.env
-*.env.*
-
-# IDEs and Editors
-*.sublime-workspace
-*.sublime-project
-*.code-workspace
-*.iml
 
 # Logs and Temporary Files
 logs/
@@ -64,7 +63,3 @@ docker-compose.override.yml
 !.gitignore
 *.orig
 *.rej
-
-# Operating System
-Thumbs.db
-Desktop.ini
