@@ -1,0 +1,70 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.lock
+
+# OS-generated files
+*.swp
+*.swo
+*.~undo-tree~
+*.bak
+*.~backup~
+.idea/
+.vscode/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+*.venv/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Build directories
+/dist/
+/build/
+/out/
+
+# Dependency directories
+/vendor/
+.env
+*.env.*
+
+# IDEs and Editors
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+*.iml
+
+# Logs and Temporary Files
+logs/
+*.log
+*.temp
+*.tmp
+
+# Docker
+docker-compose.override.yml
+*.dockerignore
+
+# Git
+!.gitignore
+*.orig
+*.rej
+
+# Operating System
+Thumbs.db
+Desktop.ini
