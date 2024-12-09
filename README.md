@@ -1,5 +1,14 @@
 # MLA
 
+![GitHub repo size](https://img.shields.io/github/repo-size/MohammadLotfiA/MLA?label=Repo%20Size)
+![GitHub stars](https://img.shields.io/github/stars/MohammadLotfiA/MLA?style=social)
+![GitHub forks](https://img.shields.io/github/forks/MohammadLotfiA/MLA?style=social)
+![GitHub issues](https://img.shields.io/github/issues/MohammadLotfiA/MLA)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/MohammadLotfiA/MLA)
+![GitHub last commit](https://img.shields.io/github/last-commit/MohammadLotfiA/MLA)
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+
 Welcome to **MLA** – a comprehensive, up-to-date repository of tools, techniques, labs, and tutorials for penetration testing and cybersecurity. This project aims to address the gap in current resources by providing high-quality, optimized, and modern solutions for learners and professionals in the cybersecurity field.
 
 Whether you’re a beginner interested in hacking basics or a seasoned professional looking for advanced techniques, **MLA** will offer reliable, compatible, and effective tools.
