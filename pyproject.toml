@@ -1,0 +1,14 @@
+[tool.mypy]
+python_version = 3.11
+disallow_untyped_defs = true
+ignore_missing_imports = true
+strict_optional = true
+
+[tool.bandit]
+skips = ['B105', 'B605']
+
+[tool.codespell]
+ignore-words-list = '.github/linters/codespell.txt'
+
+[tool.isort]
+profile = 'black'

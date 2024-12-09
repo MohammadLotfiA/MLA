@@ -1,0 +1,134 @@
+# https://pre-commit.com/#installation
+default_stages: [pre-commit, pre-push]
+default_language_version:
+  python: python3
+  node: 22.2.0
+minimum_pre_commit_version: '3.2.0'
+
+repos:
+  - repo: local
+    hooks:
+      - id: prettier
+        name: run prettier
+        description: format files with prettier
+        entry: prettier --write # ***
+        files: \.(html|css|js|php|c|cpp|py|md|ya?ml)$ # ***
+        language: node
+        additional_dependencies: ['prettier@3.3.3']
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: debug-statements
+      - id: double-quote-string-fixer
+      - id: name-tests-test
+      - id: requirements-txt-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: detect-aws-credentials
+        args: ['--allow-missing-credentials']
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: check-added-large-files
+        args: ['--maxkb=500']
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.3.0
+    hooks:
+      - id: codespell
+        name: run codespell
+        description: run the codespell spell checker
+        args: [--ignore-words=.github/linters/codespell.txt]
+        pass_filenames: false # *** Improves performance by processing all files at once
+        additional_dependencies:
+          - tomli
+
+  - repo: https://github.com/tcort/markdown-link-check
+    rev: v3.13.5
+    hooks:
+      - id: markdown-link-check
+        name: run markdown link check
+        description: check the Markdown files for broken links
+        args: [-q]
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.42.0
+    hooks:
+      - id: markdownlint
+        name: run markdownlint
+        description: check Markdown files with markdownlint
+        args: [--config=.github/linters/.markdown-lint.yml]
+        types: [markdown]
+        files: \.md$
+
+  - repo: https://github.com/shssoichiro/oxipng
+    rev: v9.1.2
+    hooks:
+      - id: oxipng
+        name: run oxipng
+        description: run oxipng lossless image compression on PNG files
+        args: ['-o', '4', '--strip', 'safe', '--alpha']
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        name: run yamllint
+        description: check YAML files with yamllint
+        args: [--strict, -c=.github/linters/.yaml-lint.yml]
+        types: [yaml]
+        files: \.ya?ml$
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        name: run isort (python)
+        description: a Python utility / library to sort imports
+
+  # Python linters and formatters
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.1
+    hooks:
+      - id: flake8
+        additional_dependencies:
+          - flake8-bandit # Detect security issues in Python code
+          - flake8-bugbear # Detect likely bugs in code
+          - flake8-docstrings # Enforce docstring conventions
+
+  - repo: https://github.com/psf/black
+    rev: 24.8.0
+    hooks:
+      - id: black
+        args: ['--line-length=88']
+        language_version: python3.11
+
+  # JavaScript and TypeScript
+  - repo: https://github.com/pre-commit/mirrors-eslint
+    rev: v9.16.0
+    hooks:
+      - id: eslint
+        args: ['--max-warnings=0']
+
+  # Bash linter
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+      - id: shellcheck
+
+  # Secrets detection
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.21.2
+    hooks:
+      - id: gitleaks
+        name: run detect hardcoded secrets
+        description: run gitleaks to detect hardcoded secrets in the repo
+        stages: [pre-push] # *** Runs on pre-push to reduce noise during commits
+
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.4
+    hooks:
+      - id: actionlint
+        description: Static checker for GitHub Actions workflow files
