@@ -107,4 +107,10 @@ For commercial inquiries, questions, or collaboration requests, please reach out
 - **Website**: https://mohammadlotfi.com/
 - **LinkedIn**: https://www.linkedin.com/in/mohammadlotfia/
 
+## Ⓜ Join Us
+
+- **Discord**: https://discord.gg/ekPxMgmVf3
+- **Telegram**: https://t.me/MLA_IT_Education
+- **YouTube**: https://www.youtube.com/@mohammadlotfia
+
 **MLA** is here to make cybersecurity more accessible, efficient, and up-to-date. Enjoy exploring the tools, learning from the labs, and enhancing your cybersecurity skills with **MLA**!
