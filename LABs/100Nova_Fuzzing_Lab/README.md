@@ -23,8 +23,8 @@ This repository provides two scripts to generate the website and its structure:
 1.  Clone this repository:
 
     ```bash
-    git clone https://github.com/mohammadlotfia/MLA/100Nova_Fuzzing_Lab.git
-    cd 100Nova_Fuzzing_Lab
+    git clone https://github.com/mohammadlotfia/MLA.git
+    cd MLA/LABs/100Nova_Fuzzing_Lab
     ```
 
 2.  Run the Python script to generate the website and folders:
@@ -52,8 +52,8 @@ This repository provides two scripts to generate the website and its structure:
 1.  Clone this repository:
 
     ```bash
-    git clone https://github.com/mohammadlotfia/MLA/100Nova_Fuzzing_Lab.git
-    cd 100Nova_Fuzzing_Lab
+    git clone https://github.com/mohammadlotfia/MLA.git
+    cd MLA/LABs/100Nova_Fuzzing_Lab
     ```
 
 2.  Make the Bash script executable:
