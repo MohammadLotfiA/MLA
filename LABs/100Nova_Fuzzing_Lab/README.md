@@ -92,7 +92,7 @@ If you have Python installed, you can easily serve the website locally using Pyt
    After running the script to generate the site, go to the directory where the site was created:
 
    ```bash
-   cd 100Nova_Fuzzing_Lab
+   cd 100nova
    ```
 
 2. **Start the Python HTTP server**:
@@ -102,7 +102,7 @@ If you have Python installed, you can easily serve the website locally using Pyt
    python3 -m http.server 8000
    ```
 
-   This will serve the files in the `100Nova_Fuzzing_Lab` folder at `http://localhost:8000`.
+   This will serve the files in the `100nova` folder at `http://localhost:8000`.
 
    Once the server is running, you can access the website at `http://localhost:8000` in your browser.
 
