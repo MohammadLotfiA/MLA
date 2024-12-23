@@ -130,7 +130,7 @@ Check the website and its source code. You can see the hint of `flag.txt` as our
    Download a common word-list for recon from either here or SecLists (Discovery/Web-Content/common.txt).
 
    ```bash
-   wget s
+   wget https://github.com/MohammadLotfiA/MLA/blob/main/LABs/100Nova_Fuzzing_Lab/common.txt
    ```
 
 2. **Run the `ffuf` and filter the response code 200**:
