@@ -1,6 +1,7 @@
 # 100 Nova
 
-Welcome to the **100 Nova** repository! This lab is designed to simulate a static website with hidden flag files, which can be discovered through fuzzing techniques.
+Welcome to the **100 Nova** Challenge! This lab is designed to simulate a static website with hidden flag files, which can be discovered through fuzzing techniques.
+
 Flag format is: `MLA{FLAG}`
 
 ## Overview
@@ -26,6 +27,12 @@ This repository provides two scripts to generate the website and its structure:
     ```bash
     git clone https://github.com/mohammadlotfia/MLA.git
     cd MLA/LABs/100Nova_Fuzzing_Lab
+    ```
+
+    or just download the Python file:
+
+    ```bash
+    wget https://github.com/MohammadLotfiA/MLA/blob/main/LABs/100Nova_Fuzzing_Lab/create_lab.py
     ```
 
 2.  Run the Python script to generate the website and folders:
@@ -57,6 +64,12 @@ This repository provides two scripts to generate the website and its structure:
     cd MLA/LABs/100Nova_Fuzzing_Lab
     ```
 
+    or just download the Bash file:
+
+    ```bash
+    wget https://github.com/MohammadLotfiA/MLA/blob/main/LABs/100Nova_Fuzzing_Lab/create_lab.sh
+    ```
+
 2.  Make the Bash script executable:
 
     ```bash
@@ -79,11 +92,7 @@ This repository provides two scripts to generate the website and its structure:
        └── [flag.txt] (in a random folder)
     ```
 
-4.  The `robots.txt` file will help guide the fuzzing process.
-
 ## Host the Site
-
-Certainly! Here's a short section that you can add to your `README.md` on how to host the website locally using Python:
 
 ### Hosting the Website Locally with Python
 
@@ -156,4 +165,4 @@ Check the website and its source code. You can see the hint of `flag.txt` as our
    ffuf -w common.txt -u http://localhost:8000/FUZZ/flag.txt -mc 200
    ```
 
-I hope you enjoyed. Happy hacking
+I hope you enjoyed. Happy Hacking, MLA-IT Education (^\_^)
