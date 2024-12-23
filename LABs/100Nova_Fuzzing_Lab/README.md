@@ -32,7 +32,7 @@ This repository provides two scripts to generate the website and its structure:
     or just download the Python file:
 
     ```bash
-    wget https://github.com/MohammadLotfiA/MLA/blob/main/LABs/100Nova_Fuzzing_Lab/create_lab.py
+    wget https://raw.githubusercontent.com/MohammadLotfiA/MLA/refs/heads/main/LABs/100Nova_Fuzzing_Lab/create_lab.py
     ```
 
 2.  Run the Python script to generate the website and folders:
@@ -67,7 +67,7 @@ This repository provides two scripts to generate the website and its structure:
     or just download the Bash file:
 
     ```bash
-    wget https://github.com/MohammadLotfiA/MLA/blob/main/LABs/100Nova_Fuzzing_Lab/create_lab.sh
+    wget https://raw.githubusercontent.com/MohammadLotfiA/MLA/refs/heads/main/LABs/100Nova_Fuzzing_Lab/create_lab.sh
     ```
 
 2.  Make the Bash script executable:
@@ -130,7 +130,7 @@ Check the website and its source code. You can see the hint of `flag.txt` as our
    Download a common word-list for recon from either here or SecLists (Discovery/Web-Content/common.txt).
 
    ```bash
-   wget https://github.com/MohammadLotfiA/MLA/blob/main/LABs/100Nova_Fuzzing_Lab/common.txt
+   wget https://github.com/MohammadLotfiA/MLA/raw/refs/heads/main/LABs/100Nova_Fuzzing_Lab/common.txt
    ```
 
 2. **Run the `ffuf` and filter the response code 200**:
