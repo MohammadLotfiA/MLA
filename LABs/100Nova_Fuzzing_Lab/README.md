@@ -153,7 +153,7 @@ Check the website and its source code. You can see the hint of `flag.txt` as our
    And remove the `Disallow` tag. This will be the payload to FUZZ and capture the flag.
 
    ```bash
-   cat robots.txt | tr -d "Disallow:" > robots.txt
+   cat robots.txt | tr -d "Disallow: /" > payload.txt
    ```
 
 4. **Re run the `ffuf` to find the FLAG**:
@@ -162,7 +162,7 @@ Check the website and its source code. You can see the hint of `flag.txt` as our
    Run the command to find the FLAG.
 
    ```bash
-   ffuf -w common.txt -u http://localhost:8000/FUZZ/flag.txt -mc 200
+   ffuf -w payload.txt -u http://localhost:8000/FUZZ/flag.txt -mc 200
    ```
 
 I hope you enjoyed. Happy Hacking, MLA-IT Education (^\_^)
